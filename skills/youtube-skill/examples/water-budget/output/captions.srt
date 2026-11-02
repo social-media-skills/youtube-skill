@@ -1,0 +1,276 @@
+1
+00:00:01,792 --> 00:00:05,393
+Earth has about 370
+quintillion gallons of water.
+
+2
+00:00:05,460 --> 00:00:11,213
+If all that water was inside a single
+drop, it'd be 860 miles wide.
+
+3
+00:00:11,280 --> 00:00:13,313
+Of course, it's not.
+
+4
+00:00:13,380 --> 00:00:16,433
+Earth's water can be
+found all over the planet.
+
+5
+00:00:16,500 --> 00:00:21,233
+Earth's water budget tells us where
+that water is and what form it takes.
+
+6
+00:00:21,300 --> 00:00:23,813
+Just like you might have
+some money in your wallet,
+
+7
+00:00:23,880 --> 00:00:27,533
+some saved in the bank or some
+in a long term investment,
+
+8
+00:00:27,600 --> 00:00:31,733
+Earth's water is spread across
+lakes, rivers, glaciers,
+
+9
+00:00:31,800 --> 00:00:33,773
+oceans and groundwater.
+
+10
+00:00:33,840 --> 00:00:38,198
+With some being easier to access
+and use and some, well,
+
+11
+00:00:38,265 --> 00:00:39,683
+not so much.
+
+12
+00:00:39,750 --> 00:00:43,313
+So, where is all 370
+quintillion gallons of water?
+
+13
+00:00:43,380 --> 00:00:48,263
+And how much can we use for drinking,
+growing food and daily life?
+
+14
+00:00:48,330 --> 00:00:52,517
+If you've seen a picture of Earth from space
+or if you're lucky enough to have been
+
+15
+00:00:52,584 --> 00:00:55,553
+to space, it'll be no surprise
+that most of Earth's water,
+
+16
+00:00:55,620 --> 00:01:00,173
+a whopping 96.5%
+of it is in Earth's oceans.
+
+17
+00:01:00,240 --> 00:01:05,316
+While this salty water provides a great
+habitat for all sorts of marine life and
+
+18
+00:01:05,383 --> 00:01:10,934
+makes a nice setting for surfing a wave,
+the water in Earth's oceans isn't
+
+19
+00:01:11,001 --> 00:01:11,501
+drinkable.
+
+20
+00:01:11,520 --> 00:01:17,526
+That means just 3.5% of Earth's water
+is fresh and might be used for drinking or
+
+21
+00:01:17,593 --> 00:01:18,173
+watering crops.
+
+22
+00:01:18,240 --> 00:01:20,753
+Might is the important word here.
+
+23
+00:01:20,820 --> 00:01:24,413
+Nearly half of Earth's freshwater
+is frozen solid in glaciers,
+
+24
+00:01:24,480 --> 00:01:29,933
+ice caps and permanent snow pack, making
+it pretty tough to access as usable water.
+
+25
+00:01:30,000 --> 00:01:33,983
+The next most abundant source of
+freshwater is what's known as groundwater.
+
+26
+00:01:34,050 --> 00:01:37,575
+As water seeps into the ground
+from above, it fills the cracks,
+
+27
+00:01:37,642 --> 00:01:39,923
+pores and spaces between bits of rock.
+
+28
+00:01:39,990 --> 00:01:43,973
+If you look deep enough, you might find
+that all the space between rock particles
+
+29
+00:01:44,040 --> 00:01:46,553
+has been filled, forming an aquifer.
+
+30
+00:01:47,040 --> 00:01:51,308
+Aquifers store huge amounts of water
+that can be pumped out to the surface for
+
+31
+00:01:51,375 --> 00:01:53,333
+drinking water and irrigating crops.
+
+32
+00:01:53,400 --> 00:01:58,633
+Like a savings account, it can take a long
+time, even centuries for groundwater to
+
+33
+00:01:58,700 --> 00:01:59,200
+accumulate.
+
+34
+00:01:59,220 --> 00:02:04,613
+That leaves just 0.1% of all water that
+isn't salty ocean water or fresh water
+
+35
+00:02:04,680 --> 00:02:06,833
+that's frozen or buried in the ground.
+
+36
+00:02:06,900 --> 00:02:09,773
+If you are looking for easy
+access to what remains,
+
+37
+00:02:09,840 --> 00:02:15,593
+think again, most of this tiny fraction
+of Earth's water is frozen as permafrost,
+
+38
+00:02:15,660 --> 00:02:21,128
+some exists as moisture in the soil, a bit
+is in the atmosphere as water vapor and
+
+39
+00:02:21,195 --> 00:02:24,743
+some makes up the water that exists
+within living creatures.
+
+40
+00:02:24,810 --> 00:02:30,064
+Just 0.01% of all water on Earth
+is on the surface in lakes,
+
+41
+00:02:30,131 --> 00:02:33,113
+rivers, swamps and marshes.
+
+42
+00:02:33,660 --> 00:02:38,033
+Most water on Earth has been here for
+billions of years and during that time,
+
+43
+00:02:38,100 --> 00:02:42,263
+any single drop might have moved between
+different parts of Earth's water budget.
+
+44
+00:02:42,330 --> 00:02:46,802
+Moving from one part of the budget to another,
+a process known as the water cycle
+
+45
+00:02:46,869 --> 00:02:51,197
+can happen quickly, like when water
+evaporates from a lake and moves to the
+
+46
+00:02:51,264 --> 00:02:51,764
+atmosphere.
+
+47
+00:02:51,630 --> 00:02:56,513
+It can also happen slowly, like when
+water makes its way deep underground.
+
+48
+00:02:56,580 --> 00:03:00,976
+Understanding where these different forms
+of water exist and how they move is an
+
+49
+00:03:01,043 --> 00:03:04,973
+important part of understanding our planet
+and planning for future water needs.
+
+50
+00:03:05,040 --> 00:03:09,653
+NASA has a fleet of satellites studying
+the location and movement of Earth's water,
+
+51
+00:03:09,720 --> 00:03:12,503
+each designed to measure
+certain types of water.
+
+52
+00:03:12,570 --> 00:03:15,413
+Some measure the movement
+of groundwater ocean currents,
+
+53
+00:03:15,480 --> 00:03:20,423
+while new missions like SWOT and NISAR
+will also fill gaps in our knowledge by
+
+54
+00:03:20,490 --> 00:03:22,943
+measuring fresh water
+and possible hazards.
+
+55
+00:03:23,010 --> 00:03:28,283
+Together, these missions help bring
+NASA's water budget and cycle into focus.
+
+56
+00:03:28,350 --> 00:03:32,663
+So next time you feel a drop of rain on your face,
+imagine all the places that water
+
+57
+00:03:32,730 --> 00:03:38,693
+might have been during the last few billion
+years and where it might be in the next.
+
+58
+00:03:39,040 --> 00:03:42,123
+(upbeat music)
+

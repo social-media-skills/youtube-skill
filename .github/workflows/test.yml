@@ -1,0 +1,58 @@
+name: test
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  pack:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install ffmpeg
+        run: |
+          if [ "$RUNNER_OS" = "Linux" ]; then sudo apt-get update && sudo apt-get install -y ffmpeg; fi
+          if [ "$RUNNER_OS" = "macOS" ]; then brew install ffmpeg; fi
+          if [ "$RUNNER_OS" = "Windows" ]; then choco install ffmpeg -y --no-progress; fi
+      - run: pip install pillow
+      - name: Check setup
+        run: python skills/youtube-skill/scripts/check_setup.py
+      - name: Make a test video and transcript
+        run: |
+          ffmpeg -v error -f lavfi -i testsrc2=size=1280x720:rate=30 -f lavfi -i sine=frequency=300 -t 45 -c:v libx264 -pix_fmt yuv420p -c:a aac test.mp4
+          printf '1\n00:00:00,500 --> 00:00:03,000\nSo, um, this is the opening of the test.\n\n2\n00:00:14,500 --> 00:00:17,000\nNow the second part about saturn rings.\n\n3\n00:00:29,500 --> 00:00:32,000\nAnd this is the end of the test.\n' > test.srt
+          python skills/youtube-skill/scripts/transcribe.py test.mp4 --from test.srt --out work
+      - name: Build the pack
+        run: |
+          printf '{"video":"test.mp4","phrase":"saturn rings","titles":["Saturn Rings: A Test Upload"],"description":{"top":"Saturn rings in 45 seconds, a test of the pack.","hashtags":["#saturn","#space","#test"]},"chapters":[["0:00","Opening"],["0:15","Saturn rings"],["0:30","The end"]],"tags":["saturn rings"],"category":"Science & Technology","made_for_kids":false,"privacy":"unlisted","replace":{"saturn":"Saturn"}}' > upload.json
+          python skills/youtube-skill/scripts/youtube_pack.py build upload.json --transcript work/transcript.json --out pack
+          python skills/youtube-skill/scripts/youtube_pack.py frames test.mp4 --out pack --count 6
+      - name: Render thumbnails
+        run: |
+          printf '{"video":"test.mp4","title":"Saturn Rings: A Test Upload","channel":"CI","options":[{"frame":10,"text":"Rings gone?","highlight":"gone"},{"frame":"0:20","text":"A test thumbnail","layout":"box","side":"right"},{"frame":30,"layout":"none"}]}' > thumbs.json
+          python skills/youtube-skill/scripts/thumbnail.py thumbs.json --out pack
+      - name: Verify output
+        run: |
+          python - <<'PY'
+          import json, os
+          m = json.load(open("pack/manifest.json"))
+          assert not m["warnings"], m["warnings"]
+          assert len(m["chapters"]) == 3 and m["chapters"][0][0] == "0:00", m["chapters"]
+          srt = open("pack/captions.srt", encoding="utf-8").read()
+          assert "Saturn rings" in srt and " um" not in srt, srt
+          post = json.load(open("pack/post.json", encoding="utf-8"))
+          assert post["socialAccounts"][0]["category"] == "28"
+          for n in "abc":
+              p = f"pack/thumb-{n}.jpg"
+              assert os.path.getsize(p) < 2 * 1024 * 1024, p
+          from PIL import Image
+          assert Image.open("pack/thumb-a.jpg").size == (1280, 720)
+          assert os.path.exists("pack/preview.png") and os.path.exists("pack/frames.jpg")
+          print("ok")
+          PY
